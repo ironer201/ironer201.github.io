@@ -81,5 +81,16 @@
                 sidebar.style.display = 'none'
             }
         </script>
+    <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwukxbwZ2n5EmHhO2fqxDD8BYqsHz4iMdcDya8vy1UIuhXBnT8nypcdf_dhVd7re9nt/exec';
+            const form = document.forms['submit-to-google-sheet'];
+
+            form.addEventListener('submit', e => {
+                e.preventDefault();
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => console.log('Success!', response))
+                    .catch(error => console.error('Error!', error.message));
+            });
+        </script>
 </body>
 </html>
