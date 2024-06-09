@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="work.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="test.html"> -->
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="hide">
+    
+                <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="test.html">About</a></li>
+                <li class="hideOnMobile"><a href="skill.html">Skills</a></li>
+                <li class="hideOnMobile"><a href="#">My Work</a></li>
+                <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+                <li class="menu"><a href="#"><i class="fa-solid fa-bars" onclick=showSidebar()></i></a></li>
+                
+            </ul>
+            <ul class="sidebar" >
+                <li class="cross"><a href="#"><i class="fa-solid fa-xmark" onclick=hideSidebar()></i></a></li>
+                <li class="hov"><a href="index.html">Home</a></li>
+                <li class="hov"><a href="test.html">About</a></li>
+                <li class="hov"><a href="skill.html">Skills</a></li>
+                <li class="hov"><a href="#">My Work</a></li>
+                <li class="hov"><a href="skill.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <p>HTML, CSS & JS</p>   
+        <div class="box">
+                <img src="image/log in.png" alt="">
+                <div class="box-d"><a href="Project Log in form/index.html">Log in form </a>
+                
+                </div>
+        </div>
+        <div class="box">
+            <img src="image/button.png" alt="">
+            <div class="box-d"><a href="project button/index.html">Colorful button </a>
+            
+            </div>
+        </div>
+        <div class="box">
+            <img src="image/food.png" alt="">
+            <div class="box-d"><a href="Project Resturant practice/index.html">Resturant</a>
+            
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="icons">
+            <p>Rome wasn't built in a day</p>
+            <a href="contact.html"><i class="fa-solid fa-envelope"></i></a>
+            <a href="contact.html"><i class="fas fa-phone-square-alt"></i></i></a>
+            <a href="https://facebook.com/md.zarif.noor37/"><i class="fab fa-facebook"></i></a>
+            <a href="https://x.com/ironer201"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.linkedin.com/in/md-zarif-noor-68aaaa264/"><i class="fab fa-linkedin"></i></a>
+        </div>
+       <div class="code">
+        <p>HTML : 66 lines<br>CSS : 171 lines </p> 
+       </div>
+        <p class="copyright"><i class="fa-solid fa-copyright"></i>All copyright reserved to Md. Zarif Noor</p>
+      </footer>
+    
+    
+
+        
+        <script>
+            function showSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+        </script>
+</body>
+</html>

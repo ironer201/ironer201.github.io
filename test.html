@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="About.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="test.html"> -->
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="hide">
+    
+                <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="test.html">About</a></li>
+                <li class="hideOnMobile"><a href="skill.html">Skills</a></li>
+                <li class="hideOnMobile"><a href="work.html">My Work</a></li>
+                <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+                <li class="menu"><a href="#"><i class="fa-solid fa-bars" onclick=showSidebar()></i></a></li>
+                
+            </ul>
+            <ul class="sidebar" >
+                <li class="cross"><a href="#"><i class="fa-solid fa-xmark" onclick=hideSidebar()></i></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="test.html">About</a></li>
+                <li><a href="skill.html">Skills</a></li>
+                <li><a href="work.html">My Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="tag-titles">
+        <p class="tab-links active-link" onclick="opentab('about')">About</p>
+        <p class="tab-links" onclick="opentab('education')">Education</p>
+    </div>
+    <div class="tab-contents active-tab" id="about">
+        <div class="container">
+                <p>My name is Md. Zarif Noor. I am 21 years old ,Computer Science & Engineering student.
+                I am interested in web and App development. I am also an ex-professional chess player and ex-Dota 2 player. I love playing CS2 and 
+                online chess game. I also dream to be a Professional CS2 player and a chess Grandmaster. Another favourite thing is that I love to typing
+                at high speed. </p>
+        </div>
+        <img src="image/IMG_20230112_131316.jpg" alt=""> 
+        </div>   
+        
+    <div class="tab-contents" id="education">
+        <div class="education">
+        <ul>
+            <li><span>Present-CSE-16</span><br>Bangladesh Army University of Engineering and Technology</li>
+            <li><span>HSC-21</span><br>Rajshahi Education Board Model School & Collage</li>
+            <li><span>SSC-19</span><br>Rajshahi Education Board Model School & Collage</li>
+        </ul>
+        </div>
+    </div>
+    <footer>
+        <div class="icons">
+            <p>Rome wasn't built in a day</p>
+            <a href="contact.html"><i class="fa-solid fa-envelope"></i></a>
+            <a href="contact.html"><i class="fas fa-phone-square-alt"></i></i></a>
+            <a href="https://facebook.com/md.zarif.noor37/"><i class="fab fa-facebook"></i></a>
+            <a href="https://x.com/ironer201"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.linkedin.com/in/md-zarif-noor-68aaaa264/"><i class="fab fa-linkedin"></i></a>
+        </div>
+       <div class="code">
+        <p>HTML : 66 lines<br>CSS : 171 lines </p> 
+       </div>
+        <p class="copyright"><i class="fa-solid fa-copyright"></i>All copyright reserved to Md. Zarif Noor</p>
+      </footer>
+        
+        
+        <script>
+            function showSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            
+            function opentab(tabname){
+            for (let tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for (let tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        </script>
+</body>
+</html>

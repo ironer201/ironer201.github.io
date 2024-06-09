@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="skill.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="test.html"> -->
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="hide">
+    
+                <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="test.html">About</a></li>
+                <li class="hideOnMobile"><a href="skill.html">Skills</a></li>
+                <li class="hideOnMobile"><a href="work.html">My Work</a></li>
+                <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+                <li class="menu"><a href="#"><i class="fa-solid fa-bars" onclick=showSidebar()></i></a></li>
+                
+            </ul>
+            <ul class="sidebar" >
+                <li class="cross"><a href="#"><i class="fa-solid fa-xmark" onclick=hideSidebar()></i></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="test.html">About</a></li>
+                <li><a href="skill.html">Skills</a></li>
+                <li><a href="work.html">My Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+      <h1>My skill set</h1>
+      <h2>Development Skill & others</h2>
+      <table>
+          <tr>
+            <th>Skill Name</th>
+            <th>Skill level</th>
+            <th>Current Status</th>
+          </tr>
+          <tr>
+            <td>HTML & CSS</td>
+            <td>Good but trying better</td>
+            <td>Practing and learning</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>Know the basic Knowledge</td>
+            <td>No Progress</td>
+          </tr>
+          <tr>
+              <td>C++ Proble solving</td>
+              <td>Good but trying better</td>
+              <td>Solving on codeforces</td>
+            </tr>
+            <tr>
+              <td>Video editing</td>
+              <td>Newbee</td>
+              <td>Practing and learing</td>
+            </tr>
+            <tr>
+              <td>Chess</td>
+              <td>Semi-Pro <br>Internation FIDE <br>Rated Player</td>
+              <td>1400+ rating<br>4,487 match played <br>1261 FIDE <br>Rapid rating</td>
+            </tr>
+            <tr>
+              <td>Typing</td>
+              <td>Fast but <br> not fast enough</td>
+              <td>30s<br>92 WPM</td>
+            </tr>
+        </table>
+        
+  </div>  
+  <footer>
+    <div class="icons">
+        <p>Rome wasn't built in a day</p>
+        <a href="contact.html"><i class="fa-solid fa-envelope"></i></a>
+        <a href="contact.html"><i class="fas fa-phone-square-alt"></i></i></a>
+        <a href="https://facebook.com/md.zarif.noor37/"><i class="fab fa-facebook"></i></a>
+        <a href="https://x.com/ironer201"><i class="fab fa-twitter-square"></i></a>
+        <a href="https://www.linkedin.com/in/md-zarif-noor-68aaaa264/"><i class="fab fa-linkedin"></i></a>
+    </div>
+   <div class="code">
+    <p>HTML : 66 lines<br>CSS : 171 lines </p> 
+   </div>
+    <p class="copyright"><i class="fa-solid fa-copyright"></i>All copyright reserved to Md. Zarif Noor</p>
+  </footer>
+        <script>
+            function showSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+        </script> 
+</body>
+</html>
