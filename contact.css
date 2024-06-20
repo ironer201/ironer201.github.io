@@ -52,6 +52,11 @@ body{
   cursor: pointer;
   font-weight: bold;
 }
+.contact .container .row .contact-right .btn:hover{
+  background:#ff004f;
+  color: black;
+  border: #ff004f;
+}
 
 .contact .container .row .contact-right form{
   width: 100%;
