@@ -44,14 +44,16 @@ body{
   display: inline-block;
   margin: 50px auto;
   width: fit-content;
-  color: black;
-  border: 1px solid #ff004f;
-  background: #ff004f;
   padding: 14px 50px;
   border-radius: 6px;
   cursor: pointer;
   font-weight: bold;
+
+  color: white;
+  background: black;
+  transition: .4s ease;
 }
+
 .contact .container .row .contact-right .btn:hover{
   background:#ff004f;
   color: black;
@@ -61,6 +63,7 @@ body{
 .contact .container .row .contact-right form{
   width: 100%;
 }
+
 form input{
   width: 400px;
   /* border: 0; */
@@ -115,5 +118,4 @@ form textarea{
   .contact-right form textarea{
     width: 260px;
   }
-
-} 
+}
