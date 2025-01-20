@@ -1,6 +1,10 @@
 body{
     margin-top: 66px;
   }
+  nav{
+    position: fixed;
+    z-index: 999;
+  }
 .container {
     /* width: 50%;
     height: 100%;
